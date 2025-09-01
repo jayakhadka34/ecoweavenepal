@@ -1,0 +1,30 @@
+// Add styling for login button
+
+$primary-color: #48b05f;
+$text-color: #333;
+$card-bg: #f8f8f8;
+$card-border-radius: 10px;
+$card-padding: 20px;
+$card-margin: 15px;
+
+
+.login-button {
+
+
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button-container {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+}

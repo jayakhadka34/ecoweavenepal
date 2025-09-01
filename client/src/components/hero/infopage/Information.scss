@@ -1,0 +1,65 @@
+.information-page {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .info-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .info-image {
+    flex: 1; // 50% width
+    display: flex;
+    justify-content: center;
+
+    img {
+      
+      max-width: 800px; // ensures image doesn’t get too big
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+  }
+
+  .info-text {
+    flex: 1; // 50% width
+    min-width: 300px;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #2f6e3d; // eco-friendly green
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .info-btn {
+      background-color: #48b05f;
+      color: white;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #3d9b52;
+      }
+    }
+  }
+}

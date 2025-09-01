@@ -1,0 +1,65 @@
+// .footer {
+  // margin-top: auto;
+  // padding: 150px;
+  // text-align: center;
+  // background-color: #48b05f;
+  // color: #555;
+
+
+.footer {
+  margin-top: auto;
+  padding: 100px;
+  text-align: center;
+  background-color: #48b05f;
+  color: #555;
+}
+  .subscribe-heading{
+  font-size: 34px;
+  color: white;
+}
+subscribe-text{
+  font-size: 12px;
+}
+
+
+.subscribe-form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.subscribe-input {
+  padding: 18px;
+  // border: px white;
+  width: 250px;
+  background-color: #48b05f;
+  
+
+}
+.subscribe-input placeholder{
+    color: #f0f0f0;
+    font-size: 1rem;
+  }
+
+.subscribe-button {
+  padding: 20px 25px;
+  background: white ;
+  color:  #48b05f  ;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.subscribe-button:hover {
+  background: #f0f0f0;
+}
+// #48b05f
+
+.footer-down{
+  background-color: white;
+ display: flex;
+ justify-content: space-between;
+font-size: 1.2rem;
+}

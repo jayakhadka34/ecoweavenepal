@@ -1,0 +1,130 @@
+// @import './variables.scss';
+
+// .landing-page {
+//   padding: 40px;
+//   text-align: center;
+//   font-family: Arial, sans-serif;
+//   color: $text-color;
+
+//   .landing-title {
+//     font-size: 2.5rem;
+//     margin-bottom: 30px;
+//     color: $primary-color;
+//   }
+
+//   .product-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+
+//   .product-card {
+//     background-color: $card-bg;
+//     border-radius: $card-border-radius;
+//     padding: $card-padding;
+//     margin: $card-margin;
+//     width: 250px;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//     transition: transform 0.2s;
+
+//     &:hover {
+//       transform: translateY(-5px);
+//     }
+
+//     .product-image {
+//       width: 100%;
+//       height: 180px;
+//       object-fit: cover;
+//       border-radius: 8px;
+//       margin-bottom: 15px;
+//     }
+
+//     .product-name {
+//       font-size: 1.5rem;
+//       margin-bottom: 10px;
+//     }
+
+//     .product-price {
+//       font-size: 1.2rem;
+//       margin-bottom: 10px;
+//       font-weight: bold;
+//       color: $primary-color;
+//     }
+
+//     .product-details {
+//       font-size: 1rem;
+//       color: darken($text-color, 20%);
+//     }
+//   }
+// }
+
+
+.landing-page {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  .landing-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #48b05f;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-name {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #48b05f;
+    }
+
+    .product-details {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
