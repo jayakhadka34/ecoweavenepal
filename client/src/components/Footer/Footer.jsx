@@ -1,18 +1,4 @@
-// import React from "react";
-// import "./Footer.scss";
 
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <p className="subscribe-heading">Subscribe to our emails</p>
-//       <p className="subscribe-text">Get our latest offers and news straight in your inbox</p>
-      
-//       {/* <p>© {new Date().getFullYear()} ECO WEB NEPAL. All rights reserved.</p> */}
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 import React, { useState } from "react";
 import "./Footer.scss";
 
@@ -28,9 +14,6 @@ const Footer = () => {
 
   return (
     <>
-    
-    
-    
     
     <footer className="footer">
       <p className="subscribe-heading">Subscribe to our emails</p>
