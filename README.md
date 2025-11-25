@@ -4,8 +4,7 @@ E-commerce Project
 
 ## Description
 
-This project is an E-commerce platform designed to provide users with a convenient and seamless shopping experience. It aims to offer a wide range of products, smooth checkout processes, and efficient management of orders.
-
+This project is an E-commerce platform designed to provide users with a convenient and seamless shopping experience. 
 ## Technologies Used
 
     Frontend:
