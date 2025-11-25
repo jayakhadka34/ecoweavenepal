@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { getBaseURL } from "../apiConfig";
-import "./ShoppingCart.scss"; // Import the CSS file
+import "./ShoppingCart.scss"; 
 
 const ShoppingCart = (props) => {
   const [cartProducts, setCartProducts] = useState(props.cartProducts);
@@ -15,7 +15,7 @@ const ShoppingCart = (props) => {
         setCartProducts(productsInCart);
       })
       .catch((err) => console.log("Error occurred"));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [props.cartProducts]);
 
   const buyProducts = () => {

@@ -9,7 +9,7 @@ function Login(props) {
   let [password, setPass] = useState("");
   let [error, setError] = useState("");
 
-  // Adding click handler
+  
   function handleClick() {
     if (validateInputs()) {
       const user = {

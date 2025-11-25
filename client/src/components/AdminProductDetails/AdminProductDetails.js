@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import OrdersByProductId from "../Orders/OrdersByProductId";
-import { getBaseURL } from "../apiConfig"; // Import the getBaseURL function
+import { getBaseURL } from "../apiConfig"; 
 import "./AdminProductDetails.scss";
 
 const ProductDetails = (props) => {
@@ -14,7 +14,7 @@ const ProductDetails = (props) => {
 
   useEffect(() => {
     axios
-      .get(`${getBaseURL()}api/products/${props.productId}`) // Use the common base URL
+      .get(`${getBaseURL()}api/products/${props.productId}`) 
       .then((res) => {
         let data = res.data;
         setProductName(data[0].name);
@@ -27,7 +27,7 @@ const ProductDetails = (props) => {
         console.log("Sorry couldn't fetch details");
         setProductDetails(false);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, []);
 
   const saveProduct = () => {
@@ -38,7 +38,7 @@ const ProductDetails = (props) => {
   formData.append("description", productDesc);
 
   if (productImage) {
-    formData.append("image", productImage); // append the selected file
+    formData.append("image", productImage); 
   }
 
   axios
@@ -54,21 +54,6 @@ const ProductDetails = (props) => {
 };
 
 
-  // const saveProduct = () => {
-  //   const productData = {
-  //     id: props.productId,
-  //     name: productName,
-  //     price: productPrice,
-  //     description: productDesc,
-  //     image:productImage,
-      
-  //   };
-  //   axios
-  //     .post(`${getBaseURL()}api/products/update`, { ...productData }) // Use the common base URL
-  //     .then((res) => {
-  //       console.log("Successful");
-  //     });
-  // };
 
   const handleBackClickToProductList = () => {
     props.onBackClick();
