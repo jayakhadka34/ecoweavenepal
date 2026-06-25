@@ -10,6 +10,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { Hero } from "./components/hero/Hero";
 import Cart from "./components/hero/cart/Cart";
 import { CartProvider } from "./components/context/CartContext";
+import LandingPage from "./components/hero/landingpage/LandingPage";
 
 function App() {
   const [isUserAuthenticated, setUserAuthorization] = useState(
@@ -66,11 +67,14 @@ function App() {
                 element={
                   <>
                     <AdminCustomerContainer isAdmin={isAdmin} customerId={customerId} />
+                    <LandingPage />
                     <Hero showCart={showCart} setShowCart={setShowCart} />
                     <Footer />
                   </>
                 }
               />
+                  
+
               <Route path="/cart" element={<Cart setShowCart={setShowCart} />} />
             </Routes>
           </>

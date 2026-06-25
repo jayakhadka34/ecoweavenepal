@@ -131,20 +131,21 @@
 //     </CartProvider>
 //   );
 // };
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.scss";
 import Information from "./infopage/Information";
 import LandingPage from "./landingpage/LandingPage";
 import Cart from "./cart/Cart";
 
 export const Hero = ({ showCart, setShowCart }) => {
+
   return (
     <div className="hero">
       <Information />
       {showCart ? (
         <Cart setShowCart={setShowCart} /> // Show Cart page
       ) : (
-        <LandingPage setShowCart={setShowCart} /> // Show products
+        <LandingPage setShowCart={setShowCart}  /> // Show products
       )}
     </div>
   );

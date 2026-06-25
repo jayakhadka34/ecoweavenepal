@@ -32,7 +32,7 @@ CREATE TABLE orders (
 );
 
 CREATE TABLE productsInOrder (
-	orderId INT(5),
+	orderId INT(10),
     productId INT(5),
     quantity INT,
     totalPrice DECIMAL(10,2),
